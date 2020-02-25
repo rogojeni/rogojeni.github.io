@@ -1,0 +1,55 @@
+{
+  "name": "rogojeni.ro",
+  "version": "0.0.1",
+  "author": "Tiberiu Tofan",
+  "description": "Home Page of Rogojeni Alliance",
+  "license": "MIT",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "deploy": "gatsby build && gh-pages -d public -b site",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^2.13.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
+    "@mdx-js/mdx": "^1.5.7",
+    "@mdx-js/react": "^1.5.7",
+    "@theme-ui/presets": "^0.2.44",
+    "gatsby-plugin-emotion": "^4.1.22",
+    "gatsby-plugin-mdx": "^1.0.73",
+    "gatsby-plugin-react-helmet": "^3.1.22",
+    "gatsby-plugin-theme-ui": "^0.2.53",
+    "gatsby-plugin-typescript": "^2.1.27",
+    "gatsby-source-filesystem": "^2.1.48",
+    "react-helmet": "^5.2.1",
+    "react-spring": "^8.0.27",
+    "theme-ui": "^0.2.52"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "gatsby-plugin",
+    "lekoarts"
+  ],
+  "bugs": {
+    "url": "https://github.com/LekoArts/gatsby-themes/issues"
+  },
+  "homepage": "https://rogojeni.ro",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LekoArts/gatsby-themes.git",
+    "directory": "themes/gatsby-theme-cara"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
