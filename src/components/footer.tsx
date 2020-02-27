@@ -18,7 +18,7 @@ const Footer = () => {
       >
         {isDark ? `Light` : `Dark`}
       </button>
-      Copyright &copy; {new Date().getFullYear()}. All rights reserved.
+      Copyright &copy; {new Date().getFullYear()}. Toate drepturile rezervate.
       <br />
       <Flex
         sx={{

@@ -75,9 +75,6 @@ export default {
       ...tailwind.styles.root,
       color: `text`,
       backgroundColor: `background`,
-      background: {
-        backgroundImage: '../images/sky.jpg'
-      },
       a: {
         transition: `all 0.3s ease-in-out`,
         "&:hover": {
