@@ -56,10 +56,6 @@ const Contact = ({offset}: { offset: number }) => (
             {/*<SVG icon="box" width={12} color="icon_darkest" left="20%" top="30%" />*/}
             {/*<SVG icon="hexa" width={8} stroke color="icon_darkest" left="80%" top="70%" />*/}
         </Divider>
-        {/*<iframe*/}
-        {/*  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11090.337148192246!2d28.08066848980204!3d45.979562015764955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b668f2f4b88847%3A0xe21801a74a471c6b!2sRogojeni%2C%20Moldova!5e0!3m2!1sen!2sro!4v1589814803974!5m2!1sen!2sro"*/}
-        {/*  width="600" height="450" frameBorder="0" style="border:0;" allowFullScreen="" aria-hidden="false"*/}
-        {/*  tabIndex="0"></iframe>*/}
     </div>
 )
 
