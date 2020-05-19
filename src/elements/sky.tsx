@@ -1,8 +1,8 @@
 import React from 'react'
 import {ParallaxLayer} from 'react-spring/renderprops-addons.cjs'
 import {css, useColorMode} from 'theme-ui'
-import backgroundDark from '../images/stars.png'
-import backgroundLight from '../images/balta.jpg'
+// import backgroundDark from '../images/stars.png'
+// import backgroundLight from '../images/balta.jpg'
 
 type SkyProps = {
     speed: number
@@ -22,8 +22,8 @@ const Sky = ({speed, offset, factor, bg, fill, clipPath, children, className}: S
                 position: `absolute`,
                 width: `full`,
                 height: `full`,
-                backgroundImage: `url(${colorMode == 'dark' ? backgroundDark : backgroundLight})`,
-                backgroundColor: `black`,
+                // backgroundImage: `url(${colorMode == 'dark' ? backgroundDark : backgroundLight})`,
+                backgroundColor: `${colorMode == 'dark' ? 'black' : 'white'}`,
                 '#contact-wave': {
                     color: fill,
                     fill: `currentColor`,

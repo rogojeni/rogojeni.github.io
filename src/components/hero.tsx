@@ -38,7 +38,7 @@ const Hero = ({offset}: { offset: number }) => (
         {/*</Divider>*/}
         <Sky bg="black" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={offset}/>
 
-        <Content sx={{variant: `texts.bigger`}} speed={0.4} offset={offset}>
+        <Content sx speed={0.4} offset={offset}>
             <Inner>
                 <Intro/>
             </Inner>
