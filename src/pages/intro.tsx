@@ -3,9 +3,12 @@ import Content from '../elements/content'
 import Inner from "../elements/inner"
 // @ts-ignore
 import IntroFull from '../sections/intro-full'
+import Layout from "../components/layout";
 
 const IntroPage = () => (
-    <IntroFull/>
+    <Layout>
+        <IntroFull/>
+    </Layout>
 )
 
 export default IntroPage
