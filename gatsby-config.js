@@ -11,6 +11,9 @@ const config = ({basePath = `/`, mdx = true}) => ({
         basePath,
     },
     plugins: [
+        `gatsby-plugin-sharp`,
+        `gatsby-remark-images`,
+        `gatsby-remark-responsive-iframe`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -18,25 +21,26 @@ const config = ({basePath = `/`, mdx = true}) => ({
                 path: `${__dirname}/src/sections`,
             },
         },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/src/images`,
+            },
+        },
         mdx && {
             resolve: `gatsby-plugin-mdx`,
             options: {
-                remarkPlugins: [{
-                    resolve: `gatsby-remark-responsive-iframe`,
-                    options: {}
-                }]
-            },
-        },
-        {
-            resolve: `gatsby-transformer-remark`,
-            options: {
-                plugins: [{
-                    resolve: `gatsby-remark-responsive-iframe`,
-                    options: {
-                        wrapperStyle: `margin-bottom: 1.0725rem`
+                gatsbyRemarkPlugins: [
+                    `gatsby-remark-responsive-iframe`,
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            backgroundColor: `transparent`,
+                            disableBgImageOnAlpha: true
+                        }
                     }
-                }
-                ],
+                ]
             },
         },
         `gatsby-plugin-react-helmet`,

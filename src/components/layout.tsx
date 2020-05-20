@@ -24,7 +24,7 @@ const Layout = ({ children, className }: LayoutProps) => (
         },
         body: {
           margin: 0,
-          padding: 0,
+          padding: 20,
           boxSizing: `border-box`,
           textRendering: `optimizeLegibility`,
           WebkitFontSmoothing: `antialiased`,
