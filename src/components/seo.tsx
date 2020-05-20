@@ -3,8 +3,8 @@ import Helmet from "react-helmet"
 import useSiteMetadata from "../hooks/use-site-metadata"
 
 const defaultProps = {
-  title: ``,
-  description: false,
+  title: `Alianta Rogojeni`,
+  description: `Alianta Rogojeni`,
   pathname: false,
   image: false,
   children: null,
